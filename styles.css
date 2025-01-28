@@ -1,0 +1,206 @@
+/* Общие стили для header */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Стили для заголовка-ссылки */
+.header-link {
+    color: white; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    cursor: pointer; /* Курсор в виде указателя */
+}
+
+.header-link:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+header {
+    background-color: #6200ea;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    background-color: #6200ea;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid white;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3700b3;
+}
+
+.exit-btn {
+    background-color: #ff1744;
+}
+
+.create-btn {
+    background-color: #6200ea;
+}
+
+/* Стили для посадочной страницы */
+.cta {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.cta p {
+    font-size: 1.2em;
+    color: #6200ea;
+}
+
+/* Стили для форм регистрации и входа */
+.auth-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form h2 {
+    margin-top: 0;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auth-form button:hover {
+    background-color: #3700b3;
+}
+
+/* Стили для страницы заметок */
+main {
+    display: flex;
+    max-width: 1500px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+aside {
+    width: 50%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.notes-list {
+    width: 75%;
+}
+
+.notes-list input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.note {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.note h3 {
+    margin-top: 0;
+}
+
+.note .date {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.note .tags {
+    font-size: 0.9em;
+    color: #6200ea;
+}
+
+/* Стили для страницы редактирования заметки */
+.edit-note {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit-note input,
+.edit-note textarea,
+.edit-note select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.edit-note button {
+    padding: 10px 20px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-note button.delete-btn {
+    background-color: #ff1744;
+}
+
+.edit-note button:hover {
+    opacity: 0.9;
+}

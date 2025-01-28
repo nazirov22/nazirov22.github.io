@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Редактирование заметки</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="btn">Назад к списку</a>
+            <h1>Редактирование заметки</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="edit-note">
+            <form>
+                <input type="text" placeholder="Название заметки" value="Заметка 1" required>
+                <textarea placeholder="Текст заметки" required>Это текст моей заметки...</textarea>
+                <select>
+                    <option>Работа</option>
+                    <option>Учеба</option>
+                    <option>Личное</option>
+                </select>
+                <input type="text" placeholder="Добавить теги (через запятую)" value="#работа, #срочно">
+                <button type="submit">Сохранить</button>
+                <button type="button" class="delete-btn">Удалить</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
